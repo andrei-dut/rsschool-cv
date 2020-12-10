@@ -1,9 +1,9 @@
 # Resume
 
-*1. Name:*  Andrey Dutkovski
 *1. First Name, Last Name:*  
 -
   * **Andrey Dutkovski**
+
 
 *2. Contact Info:*  
 - 
