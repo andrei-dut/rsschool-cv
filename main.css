@@ -48,3 +48,61 @@ div > p{
            span{
       opacity: 0.6;
     }
+    .A_D{
+        border-radius: 50%;
+        border: 3px solid rgb(255, 255, 255);
+        padding: 1px;
+        position: absolute;
+        bottom:8px;
+       left: 70px;
+          }
+          .name{
+    font: bold 50px "Times New Roman";
+    color: #ffffff;
+    position: relative;
+    top: 30px;
+    left: 60px;
+      }
+      .objective{
+        font: 33px "Times New Roman";
+        color: #ffffff;
+        position: relative;
+        bottom: 40px;
+        left: 60px;
+    }
+      .leftSection{
+          width: 344px;
+        }
+        .rightSection{
+        margin-left: 30px;
+        width: 600px;
+    }
+    
+    .blockContacts > div {
+        display: flex;
+           margin: 20px 10px;
+                  }
+                  .blockContacts > div > p{
+        font: 20px "Times New Roman" ;
+        display: block;
+        margin: -3px 10px;
+    }
+    .blockSummary p:nth-child(2){
+        font: 20px "Times New Roman" ;
+          margin: 10px 10px;
+       }
+      
+        .rightSection > div > ul > li{
+            margin-bottom: 30px;
+            }
+         
+               .rightSection div:first-child ,.leftSection div:first-child{
+                height: 130px;
+                }
+                .rightSection > div:last-child ,.leftSection div:last-child{
+                 border: none;
+                height: 140px;
+                }
+                .tableSkills{
+                         padding-left: 10px;
+            }
