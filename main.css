@@ -13,8 +13,7 @@ background-color:rgb(76, 40, 134);
 display: flex;
 flex-direction: column;
 justify-content:center;
-  }
- 
+  } 
 main{
     width: 944px;
     box-sizing: border-box;
@@ -23,3 +22,29 @@ main{
    display: flex;
    padding-left: 20px;
   }
+  li {
+    list-style-type: none; 
+   }
+   li::before {
+    color: rgb(76, 40, 134); 
+    content: "\27A4"; 
+    padding-right: 10px;
+   }
+   li{
+       font-size: 20px;
+       margin-top: 10px;
+   }
+   section > div{
+    margin-right: 15px;
+    border-bottom: 1px solid rgb(76, 40, 134); 
+    height: 150px;
+}
+div > p{
+    font:bold 25px "Times New Roman";
+    line-height: 0px;
+    justify-content: center;
+    display: flex; 
+           }
+           span{
+      opacity: 0.6;
+    }
