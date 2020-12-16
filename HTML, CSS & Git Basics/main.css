@@ -4,7 +4,6 @@
   position: relative;
   margin: auto;
   text-align: center;
-  border-bottom: 1px solid rgb(76, 40, 134);
   background-color: rgb(76, 40, 134);
 }
 .photo-user {
@@ -97,16 +96,9 @@
 
 @media screen and (max-device-width: 768px) {
   .header-resume {
-    height: 130px;
     width: 100%;
-    position: relative;
-    margin: auto;
-    border-bottom: 1px solid rgb(76, 40, 134);
-    background-color: rgb(76, 40, 134);
   }
   .photo-user {
-    border-radius: 50%;
-    border: 3px solid rgb(255, 255, 255);
     padding: 1px;
     position: absolute;
     bottom: 6px;
@@ -115,7 +107,7 @@
   .user-name {
     width: 60%;
     font: bold 30px "Times New Roman";
-    color: #ffffff;
+
     margin: 0px;
     margin-left: 35%;
     padding-left: 0px;
@@ -123,7 +115,7 @@
   }
   .objective {
     font: 16px "Times New Roman";
-    color: #ffffff;
+
     margin-top: 10px;
     margin-left: 35%;
     padding-left: 0px;
@@ -138,7 +130,6 @@
     flex-direction: column;
     box-sizing: border-box;
     padding-left: 0px;
-    border-bottom: 10px solid rgb(76, 40, 134);
   }
   .left-block,
   .right-block {
@@ -148,11 +139,9 @@
 
   .block-user-informatoin {
     margin-right: 0px;
-    border-bottom: 1px solid rgb(76, 40, 134);
     height: 100%;
   }
   .header-block-user-informatoin {
-    font: bold 25px "Times New Roman";
     line-height: 0px;
     text-align: center;
   }
@@ -161,38 +150,24 @@
     margin: 15px 10px;
   }
   .text-contact-row {
-    font: 20px "Times New Roman";
     margin: 0px 10px;
   }
 
-  .icons-contacts {
-    width: 24px;
-    height: 18px;
-  }
   .text-user {
-    font: 20px "Times New Roman";
     margin: 10px 10px;
   }
   .item-list-user-informatoin {
     list-style-type: disc;
-    margin-bottom: 15px;
-    font-size: 20px;
   }
   .item-list-user-informatoin::before {
     color: none;
     content: none;
     padding-right: 0px;
   }
-  .transparenr-text {
-    opacity: 0.6;
-  }
-  .right-block .block-user-informatoin:first-child,
-  .left-block .block-user-informatoin:first-child {
+  .right-block .block-user-informatoin:last-child {
     height: 100%;
   }
-  .right-block .block-user-informatoin:last-child,
   .left-block .block-user-informatoin:last-child {
-    border: none;
-    height: 100%;
+    border-bottom: 1px solid rgb(76, 40, 134);
   }
 }
