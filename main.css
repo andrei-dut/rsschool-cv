@@ -1,179 +1,198 @@
-@media screen and (min-device-width: 760px){
-  body{
-    border-bottom: 10px solid rgb(76, 40, 134);
-    width: 1024px;
-    margin: auto;
-     }
-     header{
-height: 130px;
-position:relative;
-margin: auto;
-text-align: center;
-border-bottom: 1px solid rgb(76, 40, 134);
-background-color:rgb(76, 40, 134);
-display: flex;
-flex-direction: column;
-justify-content:center;
-  }
- 
-main{
-    width: 944px;
-      margin: auto;
-    flex-direction: row;
-   display: flex;
-   padding-left: 20px;
-  }
-  li {
-    list-style-type: none; 
-   }
-   li::before {
-    color: rgb(76, 40, 134); 
-    content: "\27A4"; 
-    padding-right: 10px;
-   }
-   li{
-       font-size: 20px;
-       margin-top: 10px;
-   }
-   section > div{
-    margin-right: 15px;
-    border-bottom: 1px solid rgb(76, 40, 134); 
-    height: 150px;
+.header-resume {
+  height: 130px;
+  width: 1024px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid rgb(76, 40, 134);
+  background-color: rgb(76, 40, 134);
 }
-div > p{
-    font:bold 25px "Times New Roman";
-    line-height: 0px;
-    justify-content: center;
-    display: flex; 
-           }
-           span{
-      opacity: 0.6;
-    }
-  .A_D{
+.photo-user {
+  border-radius: 50%;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 1px;
+  position: absolute;
+  bottom: 8px;
+  left: 70px;
+}
+.user-name {
+  font: bold 50px "Times New Roman";
+  color: #ffffff;
+  margin: 0px;
+  padding-left: 10%;
+  padding-top: 10px;
+}
+.objective {
+  font: 33px "Times New Roman";
+  color: #ffffff;
+  margin-top: 5px;
+  padding-left: 10%;
+}
+
+.main-container {
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding-left: 20px;
+  border-bottom: 10px solid rgb(76, 40, 134);
+}
+.left-block {
+  width: 344px;
+}
+.right-block {
+  margin-left: 30px;
+  width: 600px;
+}
+.block-user-informatoin {
+  margin-right: 15px;
+  border-bottom: 1px solid rgb(76, 40, 134);
+  height: 150px;
+}
+.header-block-user-informatoin {
+  font: bold 25px "Times New Roman";
+  line-height: 0px;
+  text-align: center;
+}
+.contact-row {
+  display: flex;
+  margin: 15px 10px;
+}
+.text-contact-row {
+  font: 20px "Times New Roman";
+  margin: 0px 10px;
+}
+
+.icons-contacts {
+  width: 24px;
+  height: 18px;
+}
+.text-user {
+  font: 20px "Times New Roman";
+  margin: 10px 10px;
+}
+.item-list-user-informatoin {
+  list-style-type: none;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.item-list-user-informatoin::before {
+  color: rgb(76, 40, 134);
+  content: "\27A4";
+  padding-right: 10px;
+}
+.transparenr-text {
+  opacity: 0.6;
+}
+.right-block .block-user-informatoin:first-child,
+.left-block .block-user-informatoin:first-child {
+  height: 130px;
+}
+.right-block .block-user-informatoin:last-child,
+.left-block .block-user-informatoin:last-child {
+  border: none;
+  height: 140px;
+}
+
+@media screen and (max-device-width: 768px) {
+  .header-resume {
+    height: 130px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    border-bottom: 1px solid rgb(76, 40, 134);
+    background-color: rgb(76, 40, 134);
+  }
+  .photo-user {
     border-radius: 50%;
     border: 3px solid rgb(255, 255, 255);
     padding: 1px;
     position: absolute;
-    bottom:8px;
-   left: 70px;
-      }
-      .name{
-font: bold 50px "Times New Roman";
-color: #ffffff;
-position: relative;
-top: 30px;
-left: 60px;
+    bottom: 6px;
+    left: 10px;
   }
-  .objective{
-    font: 33px "Times New Roman";
+  .user-name {
+    width: 60%;
+    font: bold 30px "Times New Roman";
     color: #ffffff;
-    position: relative;
-    bottom: 40px;
-    left: 60px;
-}
-  .leftSection{
-      width: 344px;
-    }
-    .rightSection{
-    margin-left: 30px;
-    width: 600px;
-}
+    margin: 0px;
+    margin-left: 35%;
+    padding-left: 0px;
+    padding-top: 2%;
+  }
+  .objective {
+    font: 16px "Times New Roman";
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 35%;
+    padding-left: 0px;
 
-.blockContacts > div {
+    width: 60%;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: auto;
     display: flex;
-       margin: 20px 10px;
-              }
-              .blockContacts > div > p{
-    font: 20px "Times New Roman" ;
-    display: block;
-    margin: -3px 10px;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 0px;
+    border-bottom: 10px solid rgb(76, 40, 134);
+  }
+  .left-block,
+  .right-block {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .block-user-informatoin {
+    margin-right: 0px;
+    border-bottom: 1px solid rgb(76, 40, 134);
+    height: 100%;
+  }
+  .header-block-user-informatoin {
+    font: bold 25px "Times New Roman";
+    line-height: 0px;
+    text-align: center;
+  }
+  .contact-row {
+    display: flex;
+    margin: 15px 10px;
+  }
+  .text-contact-row {
+    font: 20px "Times New Roman";
+    margin: 0px 10px;
+  }
+
+  .icons-contacts {
+    width: 24px;
+    height: 18px;
+  }
+  .text-user {
+    font: 20px "Times New Roman";
+    margin: 10px 10px;
+  }
+  .item-list-user-informatoin {
+    list-style-type: disc;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .item-list-user-informatoin::before {
+    color: none;
+    content: none;
+    padding-right: 0px;
+  }
+  .transparenr-text {
+    opacity: 0.6;
+  }
+  .right-block .block-user-informatoin:first-child,
+  .left-block .block-user-informatoin:first-child {
+    height: 100%;
+  }
+  .right-block .block-user-informatoin:last-child,
+  .left-block .block-user-informatoin:last-child {
+    border: none;
+    height: 100%;
+  }
 }
-.blockSummary p:nth-child(2){
-    font: 20px "Times New Roman" ;
-      margin: 10px 10px;
-   }
-  
-    .rightSection > div > ul > li{
-        margin-bottom: 30px;
-        }
-     
-           .rightSection div:first-child ,.leftSection div:first-child{
-            height: 130px;
-            }
-            .rightSection > div:last-child ,.leftSection div:last-child{
-             border: none;
-            height: 140px;
-            }
-            .tableSkills{
-                     padding-left: 10px;
-        }
-      }
-  @media screen and (max-device-width: 760px){
-    body{
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: column;
-    
-        }
-        header{
-        height: 135px;
-         background-color:rgb(76, 40, 134);
-        
-}
-        h1{
-          width: 210px;
-          text-align: center;
-          position: relative;
-          left: 125px;
-          bottom: 15px;
-          color: #ffffff;
-          font-family: 'Times New Roman', Times, serif;
-        }
-        header>p{
-         width: 210px;
-         position: relative;
-          left: 125px;
-          bottom: 30px;
-          text-align: center;
-          color: #ffffff;
-          font-family: 'Times New Roman', Times, serif;
-        }
-.A_D{
-border-radius: 50%;
-position: relative;
-bottom: 160px;
-left: 5px;
-border: 3px solid rgb(255, 255, 255);
-}
-       section > div{
-         margin-right: 15px;
-         border-bottom: 1px solid rgb(76, 40, 134); 
-          }
-         div > p{
-           font:bold 25px "Times New Roman";
-         
-           justify-content: center;
-           display: flex; 
-                  }
-                  .blockContacts > div {
-                   display: flex;
-                      margin: 10px 10px;
-                             }
-                             .blockContacts > div > p{
-                   font: 20px "Times New Roman" ;
-                   margin: -3px 10px;
-               }
-               .blockSummary p:nth-child(2){
-                   font: 20px "Times New Roman" ;
-                     margin: 10px 10px;
-                  }
-                  span{
-                    opacity: 0.6;
-                  }
-                }
-  
-          
-                      
-                       
-                         
-                            
