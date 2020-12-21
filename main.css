@@ -1,0 +1,191 @@
+.header-resume {
+  height: 130px;
+  width: 1024px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(76, 40, 134);
+}
+.photo-user {
+  border-radius: 50%;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 1px;
+  position: absolute;
+  bottom: 8px;
+  left: 70px;
+}
+.user-name {
+  font: bold 50px "Times New Roman";
+  color: #ffffff;
+  margin: 0px;
+  padding-left: 10%;
+  padding-top: 10px;
+}
+.objective {
+  font: 33px "Times New Roman";
+  color: #ffffff;
+  margin-top: 5px;
+  padding-left: 10%;
+}
+
+.main-container {
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding-left: 20px;
+  border-bottom: 10px solid rgb(76, 40, 134);
+}
+.left-block {
+  width: 344px;
+}
+.right-block {
+  margin-left: 30px;
+  width: 600px;
+}
+.block-user-informatoin {
+  margin-right: 15px;
+  border-bottom: 1px solid rgb(76, 40, 134);
+  height: 150px;
+}
+.header-block-user-informatoin {
+  font: bold 25px "Times New Roman";
+  line-height: 0px;
+  text-align: center;
+}
+.contact-row {
+  display: flex;
+  margin: 15px 10px;
+}
+.text-contact-row {
+  font: 20px "Times New Roman";
+  margin: 0px 10px;
+}
+
+.icons-contacts {
+  width: 24px;
+  height: 18px;
+}
+#icon-skype{
+  height: 21px;
+}
+
+.text-user {
+  font: 20px "Times New Roman";
+  margin: 10px 10px;
+}
+.item-list-user-informatoin {
+  list-style-type: none;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.item-list-user-informatoin::before {
+  color: rgb(76, 40, 134);
+  content: "\27A4";
+  padding-right: 10px;
+}
+.transparenr-text {
+  opacity: 0.6;
+}
+.right-block .block-user-informatoin:first-child,
+.left-block .block-user-informatoin:first-child {
+  height: 130px;
+}
+.right-block .block-user-informatoin:last-child,
+.left-block .block-user-informatoin:last-child {
+  border: none;
+  height: 140px;
+}
+
+@media screen and (max-device-width: 768px) {
+  .header-resume {
+    width: 100%;
+  }
+  .photo-user {
+    position: absolute;
+    bottom: 6px;
+    left: 10px;
+  }
+  .user-name {
+    width: 60%;
+    font: 30px "Times New Roman";
+    margin-left: 35%;
+    padding-left: 0px;
+    padding-top: 2%;
+  }
+  .objective {
+    font: 16px "Times New Roman";
+    margin-top: 10px;
+    margin-left: 35%;
+    padding-left: 0px;
+    width: 60%;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 0px;
+  }
+  .left-block,
+  .right-block {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .block-user-informatoin {
+    margin-right: 0px;
+    height: 100%;
+  }
+  .item-list-user-informatoin {
+    list-style-type: disc;
+  }
+  .item-list-user-informatoin::before {
+    content: none;
+    padding-right: 0px;
+  }
+  .right-block .block-user-informatoin:last-child {
+    height: 100%;
+  }
+  .left-block .block-user-informatoin:last-child {
+    border-bottom: 1px solid rgb(76, 40, 134);
+  }
+}
+@media screen and (max-device-width: 340px) {
+  .header-resume {
+    height: 100%;
+  }
+  .photo-user {
+    width: 55px;
+
+    position: absolute;
+    top: 10px;
+  }
+  .user-name {
+    font: bold 16px "Times New Roman";
+  }
+
+  .objective {
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  .contact-row {
+    margin-left: 0px;
+  }
+  .text-contact-row {
+    font-size: 14px;
+    margin-left: 3px;
+    padding-top: 3px;
+  }
+  .text-user {
+    font-size: 14px;
+  }
+  .header-block-user-informatoin {
+    font: bold 16px "Times New Roman";
+  }
+  .item-list-user-informatoin {
+    font-size: 14px;
+  }
+}
