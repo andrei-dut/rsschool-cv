@@ -65,8 +65,12 @@
 
 .icons-contacts {
   width: 24px;
+  height: 18px;
+}
+#icon-skype{
   height: 21px;
 }
+
 .text-user {
   font: 20px "Times New Roman";
   margin: 10px 10px;
