@@ -1,6 +1,8 @@
 .slider {
   background-color: #F06C64;
-
+& h2{
+  display: none;
+}
 }
 
 .wrapper {

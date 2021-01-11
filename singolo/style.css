@@ -175,6 +175,9 @@ span {
 .slider {
   background-color: #F06C64;
 }
+.slider h2 {
+  display: none;
+}
 
 .wrapper {
   overflow: hidden;
@@ -1194,7 +1197,7 @@ span {
   width: 220px;
   height: 104px;
 }
-.list-item-text > h1 {
+.list-item-text > h3 {
   color: #666D89;
   font-family: "Lato";
   font-style: normal;
