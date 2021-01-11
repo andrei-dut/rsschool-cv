@@ -124,5 +124,147 @@ span {
 }
 
 /*# sourceMappingURL=style.css.map */
+.slider {
+  background-color: #F06C64;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 1020px;
+  height: 594px;
+  z-index: 1;
+  margin: 0px auto;
+}
+@media (max-width: 1019px) {
+  .wrapper {
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+.slides {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -1020px;
+  width: 10000px;
+}
+@media (max-width: 1019px) {
+  .slides {
+    left: -100vw;
+  }
+}
+
+.slides.shifting {
+  transition: left 0.2s ease-out;
+}
+
+.slide {
+  width: 1020px;
+  height: 594px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s;
+  position: relative;
+}
+@media (max-width: 1019px) {
+  .slide {
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+#prev:active,
+#next:active {
+  transform: scale(0.8);
+}
+
+.line-slider {
+  background-color: #EA676B;
+  height: 6px;
+}
+
+.buttons {
+  width: 1020px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  top: 381px;
+  left: calc(50% - 512px);
+}
+@media (max-width: 1019px) {
+  .buttons {
+    width: 100vw;
+    top: 310px;
+    left: calc(50% - 50vw);
+  }
+}
+@media (max-width: 767px) {
+  .buttons {
+    width: 100vw;
+    top: 193px;
+    left: calc(50% - 50vw);
+  }
+}
+
+.slider-content__arrow-left {
+  background-image: url(images/slider/arrow-left.png);
+  background-repeat: round;
+  width: 20px;
+  height: 27px;
+  margin-left: 38px;
+  z-index: 100;
+}
+@media (max-width: 1019px) {
+  .slider-content__arrow-left {
+    margin-left: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .slider-content__arrow-left {
+    width: 14px;
+    height: 24px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 374px) {
+  .slider-content__arrow-left {
+    width: 14px;
+    height: 24px;
+    margin-left: 7px;
+  }
+}
+
+.slider-content__arrow-right {
+  background-image: url(images/slider/arrow-right.png);
+  background-repeat: round;
+  width: 20px;
+  height: 27px;
+  margin-right: 38px;
+  z-index: 100;
+}
+@media (max-width: 1019px) {
+  .slider-content__arrow-right {
+    margin-right: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .slider-content__arrow-right {
+    width: 14px;
+    height: 24px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 374px) {
+  .slider-content__arrow-right {
+    width: 14px;
+    height: 24px;
+    margin-left: 7px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
