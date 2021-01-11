@@ -1,0 +1,133 @@
+  .header{
+       background-color: #2D303A;
+      
+       @media (max-width: 767px) {
+        height: 71px;
+
+    }
+       
+  }
+
+  .header-content {
+    transition: all 1s ease-in-out;
+    background-color: #2D303A;
+    position: relative;
+    z-index: 100;
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+overflow: hidden;
+     height: 89px;
+    color: white;
+    @media (max-width: 1019px) {
+      width: 100vw;
+    }
+    @media (max-width: 767px) {
+   margin: 0px;
+      height: 71px;
+
+   }
+    
+  }
+
+
+
+  
+  .line{
+    width: 25px;
+    height: 2.4px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+  }
+  .header__logo {
+   display: flex;
+   
+    margin: 29px 41px 35px;
+    text-transform: uppercase;
+    font: 700 12px 'Lato', sans-serif;
+    line-height: 30px;
+    @media (max-width: 767px) {
+      font-family: 'Lato';
+font-style: normal;
+font-weight: bold;
+font-size: 9.6875px;
+line-height: 24px;
+margin:calc(71px / 2 - 10px) 0px 0px 0px;
+
+
+    }
+   
+   
+  }
+  
+  .header__navigation {
+    margin: 31px 40px 34px;
+    @media (max-width: 767px) {
+     position: absolute;
+     top: 215px;
+     left: 34px;
+     height: 260px;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    list-style: none;
+        align-items: center;
+      
+        @media (max-width: 767px) {
+height:  100%;
+              
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: space-between;
+       & a{
+        font-size: 24px;
+        line-height: 29px;
+       } 
+        >.t{
+                display:none;
+        }
+  }
+}
+
+  
+  .line-header{
+    background-color: #323746;
+    height: 6px;
+    @media (max-width: 767px) {
+      display: none;
+          }
+  }
+  
+  .t {
+  
+    padding: 0px 14px 10px;
+    font: 20px 'Lato', sans-serif;
+    
+   
+  }
+  
+  .navigation__link {
+    text-transform: uppercase;
+font: 700 12px 'Lato', sans-serif;
+line-height: 14px;
+letter-spacing: -0.03em;
+text-decoration: none;
+color: white;
+
+  }
+  
+  .navigation__link:hover {
+    color: #F06C64;
+    cursor: pointer;
+  }
+  
+  span {
+    color: #F06C64;
+    
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
