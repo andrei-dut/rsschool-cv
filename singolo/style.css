@@ -9,7 +9,7 @@
 }
 
 .header {
-  background-color: #2D303A;
+  background-color: #2d303a;
 }
 @media (max-width: 767px) {
   .header {
@@ -19,7 +19,7 @@
 
 .header-content {
   transition: all 1s ease-in-out;
-  background-color: #2D303A;
+  background-color: #2d303a;
   position: relative;
   z-index: 100;
   display: flex;
@@ -109,12 +109,12 @@
 }
 
 .navigation__link:hover {
-  color: #F06C64;
+  color: #f06c64;
   cursor: pointer;
 }
 
 span {
-  color: #F06C64;
+  color: #f06c64;
 }
 
 .active {
@@ -123,7 +123,7 @@ span {
 
 /*# sourceMappingURL=style.css.map */
 .slider {
-  background-color: #F06C64;
+  background-color: #f06c64;
 }
 
 .wrapper {
@@ -181,7 +181,7 @@ span {
 }
 
 .line-slider-1 {
-  background-color: #EA676B;
+  background-color: #ea676b;
   height: 6px;
 }
 
@@ -193,7 +193,7 @@ span {
 .phone-vertical {
   width: 216px;
   height: 458px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 0px 0px 28px 112px;
   border-radius: 27px;
   display: flex;
@@ -221,8 +221,8 @@ span {
 .phone-vertical__camera {
   width: 4px;
   height: 4px;
-  background-color: #EB5055;
-  border: 2.5px solid #D8D8D8;
+  background-color: #eb5055;
+  border: 2.5px solid #d8d8d8;
   border-radius: 50%;
   margin-top: 17.48px;
 }
@@ -237,7 +237,7 @@ span {
   .phone-vertical__camera {
     width: 1.5px;
     height: 1.5px;
-    border: 1.5px solid #D8D8D8;
+    border: 1.5px solid #d8d8d8;
     margin-top: 6.48px;
   }
 }
@@ -246,7 +246,7 @@ span {
   width: 36px;
   height: 5px;
   border-radius: 10px;
-  background-color: #ACACAC;
+  background-color: #acacac;
   margin-top: 10.62px;
 }
 @media (max-width: 1019px) {
@@ -267,7 +267,7 @@ span {
 .phone-vertical__screen {
   width: 188px;
   height: 333px;
-  border: 3px solid #C7C7C7;
+  border: 3px solid #c7c7c7;
   margin-top: 21.04px;
   border-radius: 2px;
   background-image: url(images/slider/phone-vertical-display.png);
@@ -284,7 +284,7 @@ span {
   .phone-vertical__screen {
     width: 71px;
     height: 124px;
-    border: 1px solid #C7C7C7;
+    border: 1px solid #c7c7c7;
     margin-top: 7.04px;
   }
 }
@@ -292,7 +292,7 @@ span {
 .phone-vertical__home-button {
   width: 41.88px;
   height: 41.88px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -316,8 +316,8 @@ span {
 .phone-vertical__home-button_backlight {
   width: 12.5px;
   height: 12.5px;
-  background-color: #FAFAFA;
-  border: 2px solid #BABABA;
+  background-color: #fafafa;
+  border: 2px solid #bababa;
   border-radius: 5px;
 }
 @media (max-width: 1019px) {
@@ -330,7 +330,7 @@ span {
   .phone-vertical__home-button_backlight {
     width: 4px;
     height: 4px;
-    border: 1px solid #BABABA;
+    border: 1px solid #bababa;
     border-radius: 2px;
   }
 }
@@ -338,7 +338,7 @@ span {
 .phone-horizontal {
   width: 458px;
   height: 216px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 0px 0px 25px 97px;
   border-radius: 27px;
   display: flex;
@@ -373,8 +373,8 @@ span {
 .phone-horizontal__camera {
   width: 4px;
   height: 4px;
-  background-color: #EB5055;
-  border: 2.5px solid #D8D8D8;
+  background-color: #eb5055;
+  border: 2.5px solid #d8d8d8;
   border-radius: 50%;
   margin-right: 16.48px;
 }
@@ -389,7 +389,7 @@ span {
   .phone-horizontal__camera {
     height: 1.5px;
     width: 1.5px;
-    border: 1.5px solid #D8D8D8;
+    border: 1.5px solid #d8d8d8;
     margin-right: 6.62px;
   }
 }
@@ -398,7 +398,7 @@ span {
   width: 5px;
   height: 36px;
   border-radius: 10px;
-  background-color: #ACACAC;
+  background-color: #acacac;
   margin-right: 10.62px;
 }
 @media (max-width: 1019px) {
@@ -419,7 +419,7 @@ span {
 .phone-horizontal__screen {
   width: 333px;
   height: 188px;
-  border: 3px solid #C7C7C7;
+  border: 3px solid #c7c7c7;
   margin-right: 21.04px;
   border-radius: 2px;
   background-image: url(images/slider/phone-horizontal-display.png);
@@ -436,7 +436,7 @@ span {
   .phone-horizontal__screen {
     height: 71px;
     width: 124px;
-    border: 1px solid #C7C7C7;
+    border: 1px solid #c7c7c7;
     margin-right: 7.04px;
   }
 }
@@ -444,7 +444,7 @@ span {
 .phone-horizontal__home-button {
   width: 41.88px;
   height: 41.88px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -468,8 +468,8 @@ span {
 .phone-horizontal__home-button_backlight {
   width: 12.5px;
   height: 12.5px;
-  background-color: #FAFAFA;
-  border: 2px solid #BABABA;
+  background-color: #fafafa;
+  border: 2px solid #bababa;
   border-radius: 5px;
 }
 @media (max-width: 1019px) {
@@ -482,7 +482,7 @@ span {
   .phone-horizontal__home-button_backlight {
     width: 4px;
     height: 4px;
-    border: 1px solid #BABABA;
+    border: 1px solid #bababa;
     border-radius: 2px;
   }
 }
@@ -490,7 +490,7 @@ span {
 .phone-vertical-left {
   width: calc(216px / 1.54);
   height: calc(458px / 1.54);
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 0px 0px 0px 0px;
   border-radius: calc(27px / 1.54);
   display: flex;
@@ -518,8 +518,8 @@ span {
 .phone-vertical-left__camera {
   width: calc(4px / 1.54);
   height: calc(4px / 1.54);
-  background-color: #EB5055;
-  border: calc(2.5px / 1.54) solid #D8D8D8;
+  background-color: #eb5055;
+  border: calc(2.5px / 1.54) solid #d8d8d8;
   border-radius: 50%;
   margin-top: calc(17.48px / 1.54);
   opacity: 0.7;
@@ -535,7 +535,7 @@ span {
   .phone-vertical-left__camera {
     width: 1.5px;
     height: 1.5px;
-    border: 1.5px solid #D8D8D8;
+    border: 1.5px solid #d8d8d8;
     margin-top: calc(6.48px / 1.54);
   }
 }
@@ -545,7 +545,7 @@ span {
   width: calc(36px / 1.54);
   height: calc(5px / 1.54);
   border-radius: calc(10px / 1.54);
-  background-color: #ACACAC;
+  background-color: #acacac;
   margin-top: calc(10.62px / 1.54);
 }
 @media (max-width: 1019px) {
@@ -567,7 +567,7 @@ span {
   opacity: 0.7;
   width: calc(188px / 1.54);
   height: calc(333px / 1.54);
-  border: calc(3px / 1.54) solid #C7C7C7;
+  border: calc(3px / 1.54) solid #c7c7c7;
   margin-top: calc(21.04px / 1.54);
   border-radius: calc(2px / 1.54);
   background-image: url(images/slider/phone-vertical-display.png);
@@ -584,7 +584,7 @@ span {
   .phone-vertical-left__screen {
     width: calc(71px / 1.54);
     height: calc(124px / 1.54);
-    border: 1px solid #C7C7C7;
+    border: 1px solid #c7c7c7;
     margin-top: calc(7.04px / 1.54);
   }
 }
@@ -593,7 +593,7 @@ span {
   opacity: 0.7;
   width: calc(41.88px / 1.54);
   height: calc(41.88px / 1.54);
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -618,8 +618,8 @@ span {
   opacity: 0.7;
   width: calc(12.5px / 1.54);
   height: calc(12.5px / 1.54);
-  background-color: #FAFAFA;
-  border: calc(2px / 1.54) solid #BABABA;
+  background-color: #fafafa;
+  border: calc(2px / 1.54) solid #bababa;
   border-radius: calc(5px / 1.54);
 }
 @media (max-width: 1019px) {
@@ -632,7 +632,7 @@ span {
   .phone-vertical-left__home-button_backlight {
     width: calc(4px / 1.54);
     height: calc(4px / 1.54);
-    border: 1px solid #BABABA;
+    border: 1px solid #bababa;
     border-radius: 2px;
   }
 }
@@ -641,7 +641,7 @@ span {
   z-index: 1;
   width: 216px;
   height: 458px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 0px 0px 0px 0px;
   border-radius: 27px;
   display: flex;
@@ -653,7 +653,7 @@ span {
   .phone-vertical-center {
     width: 162.36px;
     height: 344.26px;
-    margin: 50px 0px;
+    margin: 50.5px 0px;
   }
 }
 @media (max-width: 767px) {
@@ -668,8 +668,8 @@ span {
 .phone-vertical-center__camera {
   width: 4px;
   height: 4px;
-  background-color: #EB5055;
-  border: 2.5px solid #D8D8D8;
+  background-color: #eb5055;
+  border: 2.5px solid #d8d8d8;
   border-radius: 50%;
   margin-top: 17.48px;
 }
@@ -684,7 +684,7 @@ span {
   .phone-vertical-center__camera {
     width: 1.5px;
     height: 1.5px;
-    border: 1.5px solid #D8D8D8;
+    border: 1.5px solid #d8d8d8;
     margin-top: 6.48px;
   }
 }
@@ -693,7 +693,7 @@ span {
   width: 36px;
   height: 5px;
   border-radius: 10px;
-  background-color: #ACACAC;
+  background-color: #acacac;
   margin-top: 10.62px;
 }
 @media (max-width: 1019px) {
@@ -714,7 +714,7 @@ span {
 .phone-vertical-center__screen {
   width: 188px;
   height: 333px;
-  border: 3px solid #C7C7C7;
+  border: 3px solid #c7c7c7;
   margin-top: 21.04px;
   border-radius: 2px;
   background-image: url(images/slider/phone-vertical-display-slide-2.png);
@@ -731,7 +731,7 @@ span {
   .phone-vertical-center__screen {
     width: 71px;
     height: 124px;
-    border: 1px solid #C7C7C7;
+    border: 1px solid #c7c7c7;
     margin-top: 7.04px;
   }
 }
@@ -739,7 +739,7 @@ span {
 .phone-vertical-center__home-button {
   width: 41.88px;
   height: 41.88px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -763,8 +763,8 @@ span {
 .phone-vertical-center__home-button_backlight {
   width: 12.5px;
   height: 12.5px;
-  background-color: #FAFAFA;
-  border: 2px solid #BABABA;
+  background-color: #fafafa;
+  border: 2px solid #bababa;
   border-radius: 5px;
 }
 @media (max-width: 1019px) {
@@ -777,7 +777,7 @@ span {
   .phone-vertical-center__home-button_backlight {
     width: 4px;
     height: 4px;
-    border: 1px solid #BABABA;
+    border: 1px solid #bababa;
     border-radius: 2px;
   }
 }
@@ -785,7 +785,7 @@ span {
 .phone-vertical-right {
   width: calc(216px / 1.54);
   height: calc(458px / 1.54);
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 0px 0px 0px 0px;
   border-radius: calc(27px / 1.54);
   display: flex;
@@ -813,8 +813,8 @@ span {
 .phone-vertical-right__camera {
   width: calc(4px / 1.54);
   height: calc(4px / 1.54);
-  background-color: #EB5055;
-  border: calc(2.5px / 1.54) solid #D8D8D8;
+  background-color: #eb5055;
+  border: calc(2.5px / 1.54) solid #d8d8d8;
   border-radius: 50%;
   margin-top: calc(17.48px / 1.54);
   opacity: 0.7;
@@ -830,7 +830,7 @@ span {
   .phone-vertical-right__camera {
     width: 1.5px;
     height: 1.5px;
-    border: 1.5px solid #D8D8D8;
+    border: 1.5px solid #d8d8d8;
     margin-top: calc(6.48px / 1.54);
   }
 }
@@ -840,7 +840,7 @@ span {
   width: calc(36px / 1.54);
   height: calc(5px / 1.54);
   border-radius: calc(10px / 1.54);
-  background-color: #ACACAC;
+  background-color: #acacac;
   margin-top: calc(10.62px / 1.54);
 }
 @media (max-width: 1019px) {
@@ -862,7 +862,7 @@ span {
   opacity: 0.7;
   width: calc(188px / 1.54);
   height: calc(333px / 1.54);
-  border: calc(3px / 1.54) solid #C7C7C7;
+  border: calc(3px / 1.54) solid #c7c7c7;
   margin-top: calc(21.04px / 1.54);
   border-radius: calc(2px / 1.54);
   background-image: url(images/slider/phone-vertical-display.png);
@@ -879,7 +879,7 @@ span {
   .phone-vertical-right__screen {
     width: calc(71px / 1.54);
     height: calc(124px / 1.54);
-    border: 1px solid #C7C7C7;
+    border: 1px solid #c7c7c7;
     margin-top: calc(7.04px / 1.54);
   }
 }
@@ -888,7 +888,7 @@ span {
   opacity: 0.7;
   width: calc(41.88px / 1.54);
   height: calc(41.88px / 1.54);
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -913,8 +913,8 @@ span {
   opacity: 0.7;
   width: calc(12.5px / 1.54);
   height: calc(12.5px / 1.54);
-  background-color: #FAFAFA;
-  border: calc(2px / 1.54) solid #BABABA;
+  background-color: #fafafa;
+  border: calc(2px / 1.54) solid #bababa;
   border-radius: calc(5px / 1.54);
 }
 @media (max-width: 1019px) {
@@ -927,7 +927,7 @@ span {
   .phone-vertical-right__home-button_backlight {
     width: calc(4px / 1.54);
     height: calc(4px / 1.54);
-    border: 1px solid #BABABA;
+    border: 1px solid #bababa;
     border-radius: 2px;
   }
 }
@@ -1013,7 +1013,7 @@ span {
 }
 
 .slide-1 {
-  background-color: #F06C64;
+  background-color: #f06c64;
   display: flex;
   align-items: center;
   height: 100%;
@@ -1025,7 +1025,7 @@ span {
 }
 
 .slide-2 {
-  background-color: #648BF0;
+  background-color: #648bf0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1188,7 +1188,7 @@ span {
 }
 
 .portfolio {
-  background-color: #2D303A;
+  background-color: #2d303a;
 }
 
 .portfolio-content {
@@ -1237,8 +1237,8 @@ span {
   font-size: 12px;
   line-height: 18px;
   text-align: center;
-  color: #767E9E;
-  border: 1px solid #767E9E;
+  color: #767e9e;
+  border: 1px solid #767e9e;
   border-radius: 5px;
 }
 @media (max-width: 374px) {
@@ -1386,18 +1386,18 @@ span {
 }
 
 .button-filter:hover {
-  border-color: #BBBBBB;
-  color: #BBBBBB;
+  border-color: #bbbbbb;
+  color: #bbbbbb;
   cursor: pointer;
 }
 
 .active-button-filter {
-  border-color: #BBBBBB;
-  color: #BBBBBB;
+  border-color: #bbbbbb;
+  color: #bbbbbb;
 }
 
 .footer {
-  background-color: #2D303A;
+  background-color: #2d303a;
 }
 
 .footer-content {
@@ -1425,7 +1425,7 @@ span {
   font-weight: 900;
   font-size: 13px;
   line-height: 18px;
-  color: #666D89;
+  color: #666d89;
 }
 @media (max-width: 767px) {
   .footer-content__description {
@@ -1443,7 +1443,7 @@ span {
 .icon {
   width: 30px;
   height: 30px;
-  border: 1px solid #666D89;
+  border: 1px solid #666d89;
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
