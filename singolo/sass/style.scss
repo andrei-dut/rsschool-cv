@@ -1,15 +1,18 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
+@import "common-styles/common-styles";
+
 @import "header/header";
-@import "header/burger-menu";
+
 @import "slider/slider-base";
+@import "slider/phone-slide-1";
+@import "slider/phone-slide-2";
 @import "slider/buttons";
 @import "slider/slide-1";
-@import "slider/phone-slide-1";
 @import "slider/slide-2";
-@import "slider/phone-slide-2";
+
 @import "services/services";
+
 @import "portfolio/portfolio";
 @import "footer/footer";
+
+@import "header/burger-menu";
+

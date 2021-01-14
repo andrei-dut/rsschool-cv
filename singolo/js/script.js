@@ -1,66 +1,50 @@
-const navigation = document.querySelector(".navigation");
-const header__navigation = document.querySelector(".header__navigation");
-const header_content = document.querySelector(".header-content");
+const headerContent = document.querySelector(".header-content");
 const burger = document.querySelector(".burger-menu");
 const body = document.querySelector("body");
-const bod = document.querySelector(".services");
 const bodyChildren = body.children;
-const nav = document.querySelectorAll(".navigation__link");
-const all = document.querySelector(".all");
-const web = document.querySelector(".web-design");
-const graphic = document.querySelector(".graphic-design");
-const artwork = document.querySelector(".artwork");
-const button_filter = document.querySelectorAll(".button-filter");
+const navigationLink = document.querySelectorAll(".navigation__link");
+const buttonFilterAll = document.querySelector(".all-images");
+const buttonFilterWeb = document.querySelector(".web-design");
+const buttonFilterGraphic = document.querySelector(".graphic-design");
+const buttonFilterArtwork = document.querySelector(".artwork");
+const buttonFilter = document.querySelectorAll(".button-filter");
 const images = document.querySelectorAll(".images");
+let slider = document.getElementById("slider"),
+  sliderItems = document.getElementById("slides"),
+  prev = document.getElementById("prev"),
+  next = document.getElementById("next");
 let numb = [];
-let remove_active_button = button_filter[0];
-let remove = nav[0];
+let removeActiveButton = buttonFilter[0];
+let remove = navigationLink[0];
 
 //OPEN THE BURGER MENU
 burger.addEventListener("click", () => {
-  burger.classList.toggle("click");
-  header_content.classList.toggle("open");
-
+  burger.classList.toggle("active-icon-burger-menu");
+  headerContent.classList.toggle("active-burger-menu");
 });
 
 //SCROLL TRACKING
-for (let i = 0; i < nav.length; i++) {
+for (let i = 0; i < navigationLink.length; i++) {
   window.addEventListener("scroll", () => {
-    console.log(bodyChildren[3].offsetTop);
     if (
-      bodyChildren[0].offsetTop <= pageYOffset &&
-      pageYOffset <= bodyChildren[0].offsetTop + bodyChildren[0].scrollHeight
+      bodyChildren[i + 1].offsetTop <= pageYOffset &&
+      pageYOffset <=
+        bodyChildren[i + 1].offsetTop + bodyChildren[i + 1].scrollHeight
     ) {
-      nav[0].classList.add("active");
+      navigationLink[i].classList.add("active");
     } else {
-      nav[i].classList.remove("active");
-    }
-    if (
-      bodyChildren[2].offsetTop <= pageYOffset &&
-      pageYOffset <= bodyChildren[2].offsetTop + bodyChildren[2].scrollHeight
-    ) {
-      nav[1].classList.add("active");
-    } else {
-      nav[i].classList.remove("active");
-    }
-    if (
-      bodyChildren[3].offsetTop <= pageYOffset &&
-      pageYOffset < bodyChildren[3].offsetTop + bodyChildren[3].scrollHeight
-    ) {
-      nav[2].classList.add("active");
-    } else {
-      nav[i].classList.remove("active");
+      navigationLink[i].classList.remove("active");
     }
   });
   //CLOSURE THE BURGER MENU , HIGHLIGHTING THE MENU ON CLICK AND SMOOTH SCROLLING TO THE ELEMENT
-  nav[i].addEventListener("click", function (e) {
+  navigationLink[i].addEventListener("click", function (e) {
+    const blockID = navigationLink[i].getAttribute("href").substr(1);
     e.preventDefault();
     remove.classList.remove("active");
-    nav[i].classList.add("active");
-    remove = nav[i];
-    burger.classList.remove("click");
-    header_content.classList.remove("open");
-    const blockID = nav[i].getAttribute("href").substr(1);
+    navigationLink[i].classList.add("active");
+    remove = navigationLink[i];
+    burger.classList.remove("active-icon-burger-menu");
+    headerContent.classList.remove("active-burger-menu");
     document.getElementById(blockID).scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -70,44 +54,44 @@ for (let i = 0; i < nav.length; i++) {
 
 //HIGHLIGHTING THE BUTTONS FILTER ON CLICK
 
-for (let i = 0; i < button_filter.length; i++) {
-  button_filter[i].addEventListener("click", () => {
-    remove_active_button.classList.remove("active-button-filter");
-    button_filter[i].classList.add("active-button-filter");
-    remove_active_button = button_filter[i];
+for (let i = 0; i < buttonFilter.length; i++) {
+  buttonFilter[i].addEventListener("click", () => {
+    removeActiveButton.classList.remove("active-button-filter");
+    buttonFilter[i].classList.add("active-button-filter");
+    removeActiveButton = buttonFilter[i];
   });
 }
 
 //SHUFFLING IMAGE ELEMENTS
 for (let s = 0; s < images.length; s++) {
-  all.addEventListener("click", () => {
+  buttonFilterAll.addEventListener("click", () => {
     images[s].style.backgroundImage =
       "url(images/portfolio-images/portfolio-" + numb[s] + ".png)";
   });
 }
-web.addEventListener("click", () => {
+buttonFilterWeb.addEventListener("click", () => {
   shuffle(arr);
 });
 for (let s = 0; s < images.length; s++) {
-  web.addEventListener("click", () => {
+  buttonFilterWeb.addEventListener("click", () => {
     images[s].style.backgroundImage =
       "url(images/portfolio-images/portfolio-" + arr[s] + ".png)";
   });
 }
-graphic.addEventListener("click", () => {
+buttonFilterGraphic.addEventListener("click", () => {
   shuffle(arr);
 });
 for (let s = 0; s < images.length; s++) {
-  graphic.addEventListener("click", () => {
+  buttonFilterGraphic.addEventListener("click", () => {
     images[s].style.backgroundImage =
       "url(images/portfolio-images/portfolio-" + arr[s] + ".png)";
   });
 }
-artwork.addEventListener("click", () => {
+buttonFilterArtwork.addEventListener("click", () => {
   shuffle(arr);
 });
 for (let s = 0; s < images.length; s++) {
-  artwork.addEventListener("click", () => {
+  buttonFilterArtwork.addEventListener("click", () => {
     images[s].style.backgroundImage =
       "url(images/portfolio-images/portfolio-" + arr[s] + ".png)";
   });
@@ -128,17 +112,13 @@ function shuffle(array) {
   return array;
 }
 let arr = [];
-for (let i = 1; i < 13; i++) {
+for (let i = 1; i <= images.length; i++) {
   numb.push(i);
   arr.push(i);
 }
 shuffle(arr);
 
 //SLIDER
-let slider = document.getElementById("slider"),
-  sliderItems = document.getElementById("slides"),
-  prev = document.getElementById("prev"),
-  next = document.getElementById("next");
 
 function slide(wrapper, items, prev, next) {
   var posX1 = 0,
