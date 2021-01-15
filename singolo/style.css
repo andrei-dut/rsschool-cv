@@ -1240,6 +1240,10 @@ span {
   color: #767e9e;
   border: 1px solid #767e9e;
   border-radius: 5px;
+  background: transparent;
+}
+.button-filter:active {
+  transform: scale(0.9);
 }
 @media (max-width: 374px) {
   .button-filter {
@@ -1248,8 +1252,8 @@ span {
 }
 
 .all-images {
-  min-width: 26px;
-  min-height: 20px;
+  width: 26px;
+  height: 20px;
 }
 
 .web-design {
