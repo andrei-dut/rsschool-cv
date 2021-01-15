@@ -70,6 +70,9 @@
   }
   @media (max-width: 374px) {
     margin: 0vw 0% 10% 0vw;
+    min-height: 104px;
+    max-width: 100%;
+    justify-content: flex-start;
   }
 }
 .list-item-icon {
@@ -79,6 +82,9 @@
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  @media (max-width: 374px) {
+    min-width: 56px;
+  }
 }
 .list-item-text {
   width: 220px;
@@ -103,7 +109,9 @@
     padding-top: 9px;
   }
   @media (max-width: 374px) {
-    width: 190px;
+    max-width: 100%;
+    min-height: 104px;
+margin-left: 20px;
   }
 }
 .pencil {

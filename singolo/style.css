@@ -1123,6 +1123,9 @@ span {
 @media (max-width: 374px) {
   .list-items {
     margin: 0vw 0% 10% 0vw;
+    min-height: 104px;
+    max-width: 100%;
+    justify-content: flex-start;
   }
 }
 
@@ -1133,6 +1136,11 @@ span {
   border-radius: 50%;
   width: 56px;
   height: 56px;
+}
+@media (max-width: 374px) {
+  .list-item-icon {
+    min-width: 56px;
+  }
 }
 
 .list-item-text {
@@ -1159,7 +1167,9 @@ span {
 }
 @media (max-width: 374px) {
   .list-item-text {
-    width: 190px;
+    max-width: 100%;
+    min-height: 104px;
+    margin-left: 20px;
   }
 }
 
