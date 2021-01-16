@@ -26,10 +26,10 @@ burger.addEventListener("click", () => {
 //SCROLL TRACKING
 for (let i = 0; i < navigationLink.length; i++) {
   window.addEventListener("scroll", () => {
-    if (
-      bodyChildren[i + 1].offsetTop <= pageYOffset &&
+      if (
+      bodyChildren[i].offsetTop <= pageYOffset &&
       pageYOffset <=
-        bodyChildren[i + 1].offsetTop + bodyChildren[i + 1].scrollHeight
+        bodyChildren[i].offsetTop + bodyChildren[i].scrollHeight
     ) {
       navigationLink[i].classList.add("active");
     } else {
@@ -65,8 +65,8 @@ for (let i = 0; i < buttonFilter.length; i++) {
 //SHUFFLING IMAGE ELEMENTS
 for (let s = 0; s < images.length; s++) {
   buttonFilterAll.addEventListener("click", () => {
-    images[s].style.backgroundImage =
-      "url(images/portfolio-images/portfolio-" + numb[s] + ".png)";
+    images[s].src = "images/portfolio-images/portfolio-" + numb[s] + ".png";
+    images[s].alt = "portfolio-" + numb[s];
   });
 }
 buttonFilterWeb.addEventListener("click", () => {
@@ -74,8 +74,9 @@ buttonFilterWeb.addEventListener("click", () => {
 });
 for (let s = 0; s < images.length; s++) {
   buttonFilterWeb.addEventListener("click", () => {
-    images[s].style.backgroundImage =
-      "url(images/portfolio-images/portfolio-" + arr[s] + ".png)";
+    images[s].src = "images/portfolio-images/portfolio-" + arr[s] + ".png";
+    images[s].alt = "portfolio-" + arr[s];
+
   });
 }
 buttonFilterGraphic.addEventListener("click", () => {
@@ -83,8 +84,8 @@ buttonFilterGraphic.addEventListener("click", () => {
 });
 for (let s = 0; s < images.length; s++) {
   buttonFilterGraphic.addEventListener("click", () => {
-    images[s].style.backgroundImage =
-      "url(images/portfolio-images/portfolio-" + arr[s] + ".png)";
+    images[s].src = "images/portfolio-images/portfolio-" + arr[s] + ".png";
+    images[s].alt = "portfolio-" + arr[s];
   });
 }
 buttonFilterArtwork.addEventListener("click", () => {
@@ -92,8 +93,8 @@ buttonFilterArtwork.addEventListener("click", () => {
 });
 for (let s = 0; s < images.length; s++) {
   buttonFilterArtwork.addEventListener("click", () => {
-    images[s].style.backgroundImage =
-      "url(images/portfolio-images/portfolio-" + arr[s] + ".png)";
+    images[s].src = "images/portfolio-images/portfolio-" + arr[s] + ".png";
+    images[s].alt = "portfolio-" + arr[s];
   });
 }
 
