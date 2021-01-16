@@ -26,10 +26,9 @@ burger.addEventListener("click", () => {
 //SCROLL TRACKING
 for (let i = 0; i < navigationLink.length; i++) {
   window.addEventListener("scroll", () => {
-      if (
+    if (
       bodyChildren[i].offsetTop <= pageYOffset &&
-      pageYOffset <=
-        bodyChildren[i].offsetTop + bodyChildren[i].scrollHeight
+      pageYOffset <= bodyChildren[i].offsetTop + bodyChildren[i].scrollHeight
     ) {
       navigationLink[i].classList.add("active");
     } else {
@@ -76,7 +75,6 @@ for (let s = 0; s < images.length; s++) {
   buttonFilterWeb.addEventListener("click", () => {
     images[s].src = "images/portfolio-images/portfolio-" + arr[s] + ".png";
     images[s].alt = "portfolio-" + arr[s];
-
   });
 }
 buttonFilterGraphic.addEventListener("click", () => {
@@ -121,12 +119,8 @@ shuffle(arr);
 
 //SLIDER
 
-function slide(wrapper, items, prev, next) {
-  var posX1 = 0,
-    posX2 = 0,
-    posInitial,
-    posFinal,
-    threshold = 100,
+function slide(items, prev, next) {
+  let posInitial,
     slides = items.getElementsByClassName("slide"),
     slidesLength = slides.length,
     slideSize = items.getElementsByClassName("slide")[0].offsetWidth,
@@ -139,10 +133,6 @@ function slide(wrapper, items, prev, next) {
 
   items.appendChild(cloneFirst);
   items.insertBefore(cloneLast, firstSlide);
-  items.onmousedown = dragStart;
-  items.addEventListener("touchstart", dragStart);
-  items.addEventListener("touchend", dragEnd);
-  items.addEventListener("touchmove", dragAction);
 
   prev.addEventListener("click", function () {
     shiftSlide(-1);
@@ -150,58 +140,13 @@ function slide(wrapper, items, prev, next) {
   next.addEventListener("click", function () {
     shiftSlide(1);
   });
-
   items.addEventListener("transitionend", checkIndex);
 
-  function dragStart(e) {
-    e = e || window.event;
-    e.preventDefault();
-    posInitial = items.offsetLeft;
-
-    if (e.type == "touchstart") {
-      posX1 = e.touches[0].clientX;
-    } else {
-      posX1 = e.clientX;
-      document.onmouseup = dragEnd;
-      document.onmousemove = dragAction;
-    }
-  }
-
-  function dragAction(e) {
-    e = e || window.event;
-
-    if (e.type == "touchmove") {
-      posX2 = posX1 - e.touches[0].clientX;
-      posX1 = e.touches[0].clientX;
-    } else {
-      posX2 = posX1 - e.clientX;
-      posX1 = e.clientX;
-    }
-    items.style.left = items.offsetLeft - posX2 + "px";
-  }
-
-  function dragEnd(e) {
-    posFinal = items.offsetLeft;
-    if (posFinal - posInitial < -threshold) {
-      shiftSlide(1, "drag");
-    } else if (posFinal - posInitial > threshold) {
-      shiftSlide(-1, "drag");
-    } else {
-      items.style.left = posInitial + "px";
-    }
-
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-
-  function shiftSlide(dir, action) {
+  function shiftSlide(dir) {
     items.classList.add("shifting");
 
     if (allowShift) {
-      if (!action) {
-        posInitial = items.offsetLeft;
-      }
-
+      posInitial = items.offsetLeft;
       if (dir == 1) {
         items.style.left = posInitial - slideSize + "px";
         index++;
@@ -231,4 +176,4 @@ function slide(wrapper, items, prev, next) {
   }
 }
 
-slide(slider, sliderItems, prev, next);
+slide(sliderItems, prev, next);

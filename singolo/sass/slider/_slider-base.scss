@@ -26,12 +26,11 @@
 }
 
 .slides.shifting {
-  transition: left 0.2s ease-out;
+  transition: left 0.5s ease-out;
 }
 .slide {
   width: 1020px;
   height: 594px;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
