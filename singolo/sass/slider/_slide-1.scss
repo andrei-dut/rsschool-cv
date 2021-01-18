@@ -1,0 +1,9 @@
+.slide-1 {
+  background-color: #f06c64;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  @media (max-width: 1019px) {
+    justify-content: center;
+  }
+}

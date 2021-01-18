@@ -1,0 +1,237 @@
+.phone-vertical {
+  width: 216px;
+  height: 458px;
+  background-color: #f2f2f2;
+  margin: 0px 0px 28px 112px;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 25px 25px 0px 0px rgba(0, 0, 0, 0.1);
+  @media (max-width: 1019px) {
+    width: 162.36px;
+    height: 344.26px;
+    margin: 41px 0px 60px;
+    border-radius: 20px;
+  }
+  @media (max-width: 767px) {
+    width: 79px;
+    height: 168px;
+    border-radius: 9px;
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.phone-vertical__camera {
+  width: 4px;
+  height: 4px;
+  background-color: #eb5055;
+  border: 2.5px solid #d8d8d8;
+  border-radius: 50%;
+  margin-top: 17.48px;
+  @media (max-width: 1019px) {
+    width: 3px;
+    height: 3px;
+    margin-top: 12.48px;
+  }
+  @media (max-width: 767px) {
+    width: 1.5px;
+    height: 1.5px;
+    border: 1.5px solid #d8d8d8;
+    margin-top: 6.48px;
+  }
+}
+.phone-vertical__speaker {
+  width: 36px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #acacac;
+  margin-top: 10.62px;
+  @media (max-width: 1019px) {
+    width: 27px;
+    height: 3.7px;
+    margin-top: 9.62px;
+  }
+  @media (max-width: 767px) {
+    width: 13px;
+    height: 1.8px;
+    margin-top: 3.62px;
+  }
+}
+.phone-vertical__screen {
+  width: 188px;
+  height: 333px;
+  border: 3px solid #c7c7c7;
+  margin-top: 21.04px;
+  border-radius: 2px;
+  background-image: url(images/slider/phone-vertical-display.png);
+  background-repeat: round;
+  @media (max-width: 1019px) {
+    width: 141px;
+    height: 250px;
+    margin-top: 12.04px;
+  }
+  @media (max-width: 767px) {
+    width: 71px;
+    height: 124px;
+    border: 1px solid #c7c7c7;
+    margin-top: 7.04px;
+  }
+}
+.phone-vertical__home-button {
+  width: 41.88px;
+  height: 41.88px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.72px;
+  @media (max-width: 1019px) {
+    width: 31px;
+    height: 31px;
+  }
+  @media (max-width: 767px) {
+    width: 13px;
+    height: 13px;
+    margin-top: 2.72px;
+  }
+}
+.phone-vertical__home-button_backlight {
+  width: 12.5px;
+  height: 12.5px;
+  background-color: #fafafa;
+  border: 2px solid #bababa;
+  border-radius: 5px;
+  @media (max-width: 1019px) {
+    width: 8px;
+    height: 8px;
+  }
+  @media (max-width: 767px) {
+    width: 4px;
+    height: 4px;
+    border: 1px solid #bababa;
+    border-radius: 2px;
+  }
+}
+
+.phone-horizontal {
+  width: 458px;
+  height: 216px;
+  background-color: #f2f2f2;
+  margin: 0px 0px 25px 97px;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  box-shadow: 25px 25px 0px 0px rgba(0, 0, 0, 0.1);
+  @media (max-width: 1019px) {
+    height: 162.36px;
+    border-radius: 20px;
+    width: 344.26px;
+    margin: 0px 18px 17px 73px;
+  }
+  @media (max-width: 767px) {
+    height: 79px;
+    width: 168px;
+    border-radius: 9px;
+    margin: 0px 0px 17px 8%;
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+  @media (max-width: 374px) {
+    margin: 0px 0px 17px 10px;
+    margin-right: 2vw;
+  }
+}
+.phone-horizontal__camera {
+  width: 4px;
+  height: 4px;
+  background-color: #eb5055;
+  border: 2.5px solid #d8d8d8;
+  border-radius: 50%;
+  margin-right: 16.48px;
+  @media (max-width: 1019px) {
+    width: 3px;
+    height: 3px;
+    margin-right: 12.48px;
+  }
+  @media (max-width: 767px) {
+    height: 1.5px;
+    width: 1.5px;
+    border: 1.5px solid #d8d8d8;
+    margin-right: 6.62px;
+  }
+}
+.phone-horizontal__speaker {
+  width: 5px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: #acacac;
+  margin-right: 10.62px;
+  @media (max-width: 1019px) {
+    height: 27px;
+    width: 3.7px;
+    margin-right: 9.62px;
+  }
+  @media (max-width: 767px) {
+    height: 13px;
+    width: 1.8px;
+    margin-right: 3.62px;
+  }
+}
+.phone-horizontal__screen {
+  width: 333px;
+  height: 188px;
+  border: 3px solid #c7c7c7;
+  margin-right: 21.04px;
+  border-radius: 2px;
+  background-image: url(images/slider/phone-horizontal-display.png);
+  background-repeat: round;
+  @media (max-width: 1019px) {
+    height: 141px;
+    width: 250px;
+    margin-right: 12.04px;
+  }
+  @media (max-width: 767px) {
+    height: 71px;
+    width: 124px;
+    border: 1px solid #c7c7c7;
+    margin-right: 7.04px;
+  }
+}
+.phone-horizontal__home-button {
+  width: 41.88px;
+  height: 41.88px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6.72px;
+  @media (max-width: 1019px) {
+    width: 31px;
+    height: 31px;
+  }
+  @media (max-width: 767px) {
+    height: 13px;
+    width: 13px;
+    margin-right: 2.72px;
+  }
+}
+.phone-horizontal__home-button_backlight {
+  width: 12.5px;
+  height: 12.5px;
+  background-color: #fafafa;
+  border: 2px solid #bababa;
+  border-radius: 5px;
+  @media (max-width: 1019px) {
+    width: 8px;
+    height: 8px;
+  }
+  @media (max-width: 767px) {
+    width: 4px;
+    height: 4px;
+    border: 1px solid #bababa;
+    border-radius: 2px;
+  }
+}

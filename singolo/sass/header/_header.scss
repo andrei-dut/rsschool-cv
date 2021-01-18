@@ -1,0 +1,115 @@
+.header {
+  background-color: #2d303a;
+  @media (max-width: 767px) {
+    height: 71px;
+  }
+}
+
+.header-content {
+  transition: all 1s ease-in-out;
+  background-color: #2d303a;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 89px;
+  color: white;
+  border-bottom: 6px solid #323746;
+  @media (max-width: 1019px) {
+    width: 100vw;
+  }
+  @media (max-width: 767px) {
+    margin: 0px;
+    height: 71px;
+    justify-content: flex-start;
+    border-bottom: initial;
+  }
+}
+
+.header__logo {
+  display: flex;
+  margin: 29px 41px 35px;
+  text-transform: uppercase;
+  font: 700 24px "Lato", sans-serif;
+  line-height: 30px;
+  @media (max-width: 767px) {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    margin: calc(71px / 2 - 10px) 0px 0px 0px;
+  }
+}
+
+.header__navigation {
+  margin: 39px 40px 34px;
+  @media (max-width: 767px) {
+    margin: 0px;
+    position: absolute;
+    top: 215px;
+    left: calc(50% - 64.5px);
+    height: 260px;
+  }
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  & li::after{
+    content: ""; 
+    display: inline-block;
+    height:3px;
+    width: 3px;
+    vertical-align: middle;
+    border-radius:50%;
+    background-color:#ffffff;
+    margin: 0px 15px;
+  }
+  & li:last-child::after{
+    content: ""; 
+    display: none;
+    
+  }
+  @media (max-width: 767px) {
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    & a {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    & li::after{
+      content: ""; 
+      display: none;
+      
+    }
+   
+  }
+}
+
+.navigation__link {
+  text-transform: uppercase;
+  font: 700 12px "Lato", sans-serif;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation__link:hover {
+  color: #f06c64;
+  cursor: pointer;
+}
+
+span {
+  color: #f06c64;
+}
+.active {
+  color: #f06c64;
+}
+
+/*# sourceMappingURL=style.css.map */
