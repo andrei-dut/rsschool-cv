@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.player {
+  max-width: 720px;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+}
+.player__video {
+  width: 100%;
+}
+.player__controls {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.player:hover .player__controls {
+  opacity: 1;
+}
+.progress {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.212);
+}
+.progress__fill {
+  width: 0%;
+  height: 10px;
+  background-color: rgba(255, 0, 0, 0.623);
+}
+.player__slider {
+  width: 20px;
+  flex: 1;
+}
+.player__button {
+  max-width: 50px;
+  flex: 1;
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: white;
+  line-height: 0;
+  outline: 0;
+}
+input:nth-of-type(2) {
+  margin-left: 10px;
+}
+input[type="range"] {
+  background: transparent;
+  outline: none;
+}
+input[type="range"]::-moz-range-track {
+  height: 7.5px;
+  background: rgba(44, 54, 129, 0.623);
+}
+input[type="range"]::-moz-range-thumb {
+  background: rgba(255, 255, 255, 0.719);
+  height: 15px;
+}
