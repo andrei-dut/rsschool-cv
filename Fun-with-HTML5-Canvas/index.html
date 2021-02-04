@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="palette">
+      <button class="clear-canvas">Clear canvas</button>
+      <p>Color line</p>
+      <input class="color" type="color" />
+      <p>Size line</p>
+      <input class="range" type="number" min="0" max="200" value="20" />
+      <div class="line-width"></div>
+    </div>
+    <canvas id="draw" width="500" height="500"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
