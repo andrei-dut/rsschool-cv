@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.palette {
+  position: absolute;
+  background-color: white;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.range,
+.color {
+  width: 60px;
+  height: 18px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.line-width {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+}
