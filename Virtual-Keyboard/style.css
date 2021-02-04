@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.use-keyboard-input {
+  width: calc(100vw - 80px);
+  height: 300px;
+  padding: 10px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: -100%;
+  background: rgb(33, 24, 168);
+  width: 100%;
+  padding: 5px 0;
+  transition: bottom 1s;
+}
+.keyboard-hidden {
+  bottom: 0;
+}
+.keyboard__keys {
+  text-align: center;
+}
+.keyboard__key {
+  background: rgb(65, 54, 218);
+  width: 6%;
+  height: 45px;
+  border-radius: 5px;
+  vertical-align: top;
+  position: relative;
+  margin: 2.5px;
+  border: none;
+  outline: none;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboard__key:active {
+  background: rgb(50, 43, 151);
+}
+.key-active {
+  width: 10%;
+}
+.key-space {
+  width: 40%;
+}
+.upper-case {
+  text-transform: uppercase;
+}
+.key-hidden {
+  background: rgb(50, 43, 151);
+}
+.upper-case-off::after {
+  content: "";
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+.upper-case-on::after {
+  background: rgba(14, 173, 0, 0.911);
+}
