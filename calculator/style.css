@@ -5,9 +5,10 @@
 }
 
 .container {
-  position: absolute;
-  top: calc(50% - 250px);
-  left: calc(50% - 200px);
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
 }
 
 .calculator {
@@ -22,8 +23,8 @@
 }
 
 .calculator-display {
-  width: 80%;
-  height: 10%;
+  width: 313px;
+  height: 42px;
   background: #25cca8;
   margin: 0px auto;
   margin-bottom: 40px;
