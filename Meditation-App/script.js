@@ -63,22 +63,20 @@ function insertTime() {
 }
 
 function playPause(playTimer, time) {
-  if (timeTimer > 0) {
-    if (playTimer === "play") {
-      setIntervalId = setInterval(insertTime, 1000);
-      video.play();
-      audio.play();
-      timerLine.style.animation = `line ${time}s linear forwards running`;
-      maskLeft.style.animation = `mask-left ${time}s linear forwards running`;
-      maskRight.style.animation = `mask-right ${time}s step-end forwards running`;
-    } else {
-      clearInterval(setIntervalId);
-      video.pause();
-      audio.pause();
-      timerLine.style.animation = `line ${time}s linear forwards paused`;
-      maskLeft.style.animation = `mask-left ${time}s linear forwards paused`;
-      maskRight.style.animation = `mask-right ${time}s step-end forwards paused`;
-    }
+  if (timeTimer > 0 && playTimer === "play") {
+    setIntervalId = setInterval(insertTime, 1000);
+    video.play();
+    audio.play();
+    timerLine.style.animation = `line ${time}s linear forwards running`;
+    maskLeft.style.animation = `mask-left ${time}s linear forwards running`;
+    maskRight.style.animation = `mask-right ${time}s step-end forwards running`;
+  } else {
+    clearInterval(setIntervalId);
+    video.pause();
+    audio.pause();
+    timerLine.style.animation = `line ${time}s linear forwards paused`;
+    maskLeft.style.animation = `mask-left ${time}s linear forwards paused`;
+    maskRight.style.animation = `mask-right ${time}s step-end forwards paused`;
   }
 }
 function animationReset() {
