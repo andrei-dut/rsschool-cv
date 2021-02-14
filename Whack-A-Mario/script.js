@@ -1,4 +1,4 @@
-const mario = document.querySelectorAll('.mario');
+const mario = document.querySelectorAll('.game__mario');
 const btnStart = document.querySelector('.start-game');
 const result = document.querySelector('.result');
 const record = document.querySelector('.record');

@@ -35,7 +35,7 @@ p:last-child {
   display: flex;
   flex-wrap: wrap;
 }
-.tube {
+.game__tube {
   flex: 1 0 40%;
   margin-top: 20px;
   overflow: hidden;
@@ -43,7 +43,7 @@ p:last-child {
   display: flex;
   justify-content: center;
 }
-.tube::after {
+.game__tube::after {
   content: "";
   width: 50%;
   height: 100%;
@@ -52,7 +52,7 @@ p:last-child {
   z-index: 3;
   top: 90px;
 }
-.mario {
+.game__mario{
   width: 90px;
   height: 100px;
   background: url(https://www.clipartmax.com/png/full/110-1102249_super-mario-bros-super-mario-transparent-background.png)
