@@ -31,11 +31,9 @@ function numberPress(number) {
     display.value = number;
     memoryNewNumber = false;
   } else {
-    if (display.value === "0") {
-      display.value = number;
-    } else {
-      display.value += number;
-    }
+    display.value === "0"
+      ? (display.value = number)
+      : (display.value += number);
   }
 }
 
@@ -45,16 +43,22 @@ function operations(operator) {
     display.value = memoryCurrentNumber;
   } else {
     memoryNewNumber = true;
-    if (memoryPendingOperation === "+") {
-      memoryCurrentNumber += +localOperationMemory;
-    } else if (memoryPendingOperation === "-") {
-      memoryCurrentNumber -= +localOperationMemory;
-    } else if (memoryPendingOperation === "*") {
-      memoryCurrentNumber *= +localOperationMemory;
-    } else if (memoryPendingOperation === "/") {
-      memoryCurrentNumber /= +localOperationMemory;
-    } else {
-      memoryCurrentNumber = +localOperationMemory;
+    switch (memoryPendingOperation) {
+      case "+":
+        memoryCurrentNumber += +localOperationMemory;
+        break;
+      case "-":
+        memoryCurrentNumber -= +localOperationMemory;
+        break;
+      case "*":
+        memoryCurrentNumber *= +localOperationMemory;
+        break;
+      case "/":
+        memoryCurrentNumber /= +localOperationMemory;
+        break;
+      default:
+        memoryCurrentNumber = +localOperationMemory;
+        break;
     }
     display.value = memoryCurrentNumber;
     memoryPendingOperation = operator;
@@ -63,7 +67,6 @@ function operations(operator) {
 
 function dot() {
   let localDecimalMemory = display.value;
-
   if (memoryNewNumber) {
     localDecimalMemory = "0.";
     memoryNewNumber = false;
@@ -76,13 +79,11 @@ function dot() {
 }
 
 function clear(clearId) {
-  if (clearId === "ce") {
-    display.value = "0";
-    memoryNewNumber = true;
-  } else {
-    memoryNewNumber = true;
+  if (clearId !== "ce") {
     memoryCurrentNumber = 0;
     memoryPendingOperation = "";
-    display.value = "0";
   }
+    memoryNewNumber = true;
+    display.value = "0";
+  
 }
