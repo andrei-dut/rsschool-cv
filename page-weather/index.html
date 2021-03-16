@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8334e7a6-6bb1-44c2-a061-4d1f8662219d&lang=en_RU" type="text/javascript">
+    </script>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="wrapper">
+        <img class="background" src="" alt="background"></img>
+        <div class="page-load">
+        <h2 class="intro"></h2>
+            <i class="fa fa-spinner fa-pulse fa-5x" aria-hidden="true"></i>
+        </div>
+        <div class="wrapper__control">
+            <div class="control-block">
+            <button class="switch-image">
+                <i class="fa fa-refresh fa-lg " aria-hidden="true" ></i>
+            </button>
+            <div class="switch-language">
+                <div class="btn-languages">
+                    <button type="button" class="btn-l btn-en">EN</button>
+                    <button type="button" class="btn-l btn-ru">RU</button>
+                </div>
+                <button type="button" class="btn btn-sort"><i class="fa fa-sort-desc " aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="switch-temperature">
+                <button type="button" class="btn btn-F">°F</button>
+                <button type="button" class="btn btn-C">°C</button>
+            </div>
+        </div>
+            <div class="block-search">
+                <input class="search__field" type="text" id="suggest" placeholder="">
+                <button type="button" class="search__btn-search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="wrapper__weather">
+            <div class="weather-today">
+                <div class="locality-user">
+                    <h2 class="name-country-city"></h2>
+                   <p class="date-time-today"><span class="date-today"></span>, <span class="time-today"></span>
+                </p> 
+                </div>
+                <div class="description-weather">
+                    <div class="temp-today"><span>k</span></div>
+                    <div class="characteristic">
+                        <div class="deg-icon"><img class="icon-weather" src="" alt="icon-weather">
+                        <span class="degree">°</span></div>
+                        <p class="summary-weather"></p>
+                        <p class="apparent-temperature"></p>
+                        <p class="wind-speed">sleed</p>
+                        <p class="humidity">humidity</p>
+                    </div>
+                </div>       
+            </div>
+            <div class="weather-three-days">
+                <div class="day">
+                    <h2 class="name-first-day">One</h2>
+                    <p class="first-day-temp"></p>
+                    <img class="first-day-icon" src="" alt="icon-weather" width="70">
+                </div>
+                <div class="day">
+                    <h2 class="name-second-day">two</h2>
+                    <p class="second-day-temp"></p>
+                    <img class="second-day-icon" src="" alt="icon-weather" width="70">
+        
+                </div>
+                <div class="day">
+                    <h2 class="name-three-day">three</h2>
+                    <p class="third-day-temp"></p>
+                    <img class="third-day-icon" src="" alt="icon-weather" width="70">
+        
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__geolocation">
+           <div class="wrapper-map">
+               <div id="map" class="map">
+            </div>
+            <div class="geolocation-data">
+                <p class="latitude"></p>
+                <p class="longitude"></p>
+            </div>
+        </div>
+    </div> 
+    </div>
+    </div>
+   <script id='script' src="dist/main.js"></script>
+</body>
+</html>
