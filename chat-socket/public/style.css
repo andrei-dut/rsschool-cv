@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+.wrapper__authorization {
+    position: relative;
+    overflow: hidden;
+  width: 300px;
+  height: 0px;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 1s ease-in;
+  transform: translateY(-200px);
+  background: repeating-linear-gradient(
+    45deg,
+    #2b2b2b,
+    #050505 15px,
+    #484848 10px,
+    #000000 20px
+  );
+}
+.wrapper__authorization.open {
+  transform: translateY(100px);
+  height: 100px;
+}
+.header {
+  text-align: center;
+}
+#form-authorization {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+#form-authorization > * {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wrapper__chat {
+    position: relative;
+    z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: opacity 1.2s ease-in;
+  opacity: 0;
+  visibility: hidden;
+}
+.active-chat {
+  opacity: 1;
+  visibility: inherit;
+}
+.wrapper__chat h2 {
+  text-align: center;
+  background: repeating-linear-gradient(
+    45deg,
+    #2b2b2b,
+    #050505 15px,
+    #484848 10px,
+    #000000 20px
+  );
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0);
+  letter-spacing: 1px;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  background: url(/img/koshaki.jpg);
+  background-size: 100% 100%;
+  scrollbar-color: #fffefe #71482600;
+  scrollbar-width: thin;
+}
+#messages p {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.438);
+  font-size: 25px;
+}
+#messages li {
+  word-break: break-all;
+  font-size: 30px;
+  padding-left: 5px;
+}
+#form {
+  display: flex;
+}
+#input {
+  flex: 1;
+  font-size: 20px;
+  background: repeating-linear-gradient(
+    45deg,
+    #2b2b2b,
+    #050505 15px,
+    #484848 10px,
+    #000000 20px
+  );
+}
+#input::placeholder {
+  color: white;
+}
+
+.send {
+  font-size: 20px;
+  background: repeating-linear-gradient(
+    45deg,
+    #2b2b2b,
+    #050505 15px,
+    #484848 10px,
+    #000000 20px
+  );
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #71482600;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fffefe;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
