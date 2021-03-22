@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <div class="player">
+      <video class="player__video" src="video/minoni.mp4"></video>
+      <div class="player__controls">
+        <div class="progress">
+          <div class="progress__fill"></div>
+        </div>
+        <button class="player__button toggle">►</button>
+        <input
+          class="player__slider"
+          type="range"
+          name="volume"
+          min="0"
+          max="1"
+          step="0.05"
+        />
+        <input
+          class="player__slider"
+          type="range"
+          name="playbackRate"
+          min="0.5"
+          max="2"
+          step="0.1"
+        />
+        <button data-skip="-10" class="player__button">&#171;10s</button>
+        <button data-skip="25" class="player__button">25s&#187</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
