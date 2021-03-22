@@ -52,7 +52,7 @@
 .upper-case {
   text-transform: uppercase;
 }
-.key-hidden {
+.key-background {
   background: rgb(50, 43, 151);
 }
 .upper-case-off::after {

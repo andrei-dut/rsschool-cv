@@ -71,7 +71,6 @@ const Keyboard = {
       let nextRow = ["backspace", "p", "enter", "?"].includes(key);
       const keyElement = document.createElement("button");
       keyElement.classList.add("keyboard__key");
-      fragment = keyElement;
       this.elements.keysContainer.appendChild(keyElement);
       keyElement.textContent = key;
       if (nextRow) {
@@ -113,7 +112,7 @@ const Keyboard = {
           });
           break;
         case "done":
-          keyElement.classList.add("key-hidden");
+          keyElement.classList.add("key-background");
           keyElement.addEventListener("click", () => {
             this.elements.main.classList.remove("keyboard-hidden");
           });
