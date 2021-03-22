@@ -24,12 +24,12 @@ function setGreet() {
     greeting.textContent = "Good Morning, ";
   } else if (hour < 18) {
     wrapper.style.backgroundImage = "url(img/aftenoon.jpg)";
-    greeting.textContent = "Good Morning, ";
+    greeting.textContent = "Good Afternoon, ";
     wrapper.style.color = "rgba(5, 5, 5, 0.7)";
   } else {
     wrapper.style.backgroundImage = "url(img/evening.jpg)";
     wrapper.style.color = "rgb(255, 255, 255, 0.7)";
-    greeting.textContent = "Good Morning, ";
+    greeting.textContent = "Good Evening, ";
   }
 }
 function getName() {
@@ -43,11 +43,9 @@ function getName() {
   }
 }
 function setName(e) {
-  if (e.type === "keypress") {
-    if (e.keyCode == 13) {
+  if (e.type === "keypress" && e.keyCode == 13) {
       localStorage.setItem("name", e.target.textContent);
       name.blur();
-    }
   } else {
     localStorage.setItem("name", e.target.textContent);
   }
@@ -63,11 +61,9 @@ function getFocus() {
   }
 }
 function setFocus(e) {
-  if (e.type === "keypress") {
-    if (e.keyCode == 13) {
+  if (e.type === "keypress" && e.keyCode == 13) {
       localStorage.setItem("focus", e.target.textContent);
       Focus.blur();
-    }
   } else {
     localStorage.setItem("focus", e.target.textContent);
   }
