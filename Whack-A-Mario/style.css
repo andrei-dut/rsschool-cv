@@ -47,16 +47,15 @@ p:last-child {
   content: "";
   width: 50%;
   height: 100%;
-  background: url(tube.png) round;
+  background: url(img/tube.png) round;
   position: relative;
   z-index: 3;
   top: 90px;
 }
-.game__mario{
+.game__mario {
   width: 90px;
   height: 100px;
-  background: url(https://www.clipartmax.com/png/full/110-1102249_super-mario-bros-super-mario-transparent-background.png)
-    round;
+  background: url(img/mario.png) round;
   position: absolute;
   transition: all 0.2s linear;
   transform: translateY(90px);
