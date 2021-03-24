@@ -1,5 +1,5 @@
 let nextPhoto = Math.round(Math.random() * (80 - 1) + 1);
-let urlImg =  "https://api.pexels.com/v1/search?orientation=landscape&query=nature&per_page=80";
+let urlImg =  "https://api.pexels.com/v1/search?orientation=landscape&query=forest&per_page=80";
 updateBackground();
 export default function updateBackground() {
   let optionsImg = {
